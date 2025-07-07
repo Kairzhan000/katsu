@@ -1,0 +1,13 @@
+@use 'normalize';
+@use 'utils';
+@use 'fonts';
+@use 'variables';
+
+@use './blocks/main';
+@use './blocks/header';
+@use './blocks/main-rec';
+@use './blocks/main-team';
+@use './blocks/main-couch';
+@use './blocks/main-abonements';
+@use './blocks/main-level';
+@use './blocks/footer';
