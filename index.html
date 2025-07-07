@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIPHOP-katsu</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/main.js" defer></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body >
+    <header class="header">
+        <div class="header__left">
+            <img class="header__left_logo" src="./icons/katsu.svg" width="80" height="84" alt="">
+            <img class="header__left_katana" src="./images/katana.png" width="166" alt="">
+        </div>
+        <div class="header__right">
+            <ul class="header__right_menu">
+                <li class="header__right_menu_item"><a href="#trainers">Тренеры</a></li>
+                <li class="header__right_menu_item"><a href="#abonements">Абонементы</a></li>
+                <li class="header__right_menu_item"><a href="#group-level">GROUP-LEVEL</a></li>
+                <li class="header__right_menu_item"><a href="#contacts">Контакты</a></li>
+            </ul>
+            <div class="burger is-active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="main__reccoment">
+                <div class="main__reccoment_left">
+                    <div class="main__reccoment_left_info">Хотите <br>попробовать<br> себя <br> в <span>HIP-HOP</span></div>
+                </div>
+                <div class="main__reccoment_right">
+                    <img src="./images/katsu-1.png" alt="">
+                </div>
+            </div>
+            <div class="main__team">
+                <div class="main__team_left">
+                    <img src="./images/katsu-2.png" alt="">
+                </div>
+                <div class="main__team_right">
+                    <div class="main__team_right_main">Добро пожаловать в <br> <span>KATSU</span></div>
+                    <div class="main__team_right_info">У нас ты прокачаешь стиль,технику и<br> уверенность!!! Мы будем рады принять вас <br> в семью</div>
+                </div>
+            </div>
+            <div class="main__couch" id="trainers">
+                <div class="main__couch_title">Тренеры</div>
+                <div class="main__couch_section">
+                    <div class="main__couch_section_left">
+                        <img src="./images/katsu-3.png" alt="">
+                    </div>
+                    <div class="main__couch_section_right">
+                        <div class="main__couch_section_right_name">Каримбаев Ескендыр</div>
+                        <div class="main__couch_section_right_num">+7-747-735-97-04</div>
+                        <div class="main__couch_section_right_info">Ескендір Каримбаев — танцор и преподаватель хип-хоп импровизации с 17-летним опытом. Помогает подросткам и взрослым раскрыться через движение, ритм и свободу самовыражения.е</div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__abonements" id="abonements">
+                <div class="main__abonements_title">
+                    Абонементы
+                </div>
+                <div class="main__abonements_cards">
+                    <div class="main__abonements_cards_card">
+                        <div class="main__abonements_cards_card_high">
+                            <div class="main__abonements_cards_card_high_top">классический</div>
+                            <div class="main__abonements_cards_card_high_bottom">абонемент</div>
+                        </div>
+                        <div class="main__abonements_cards_card_down">
+                            <div class="main__abonements_cards_card_down_top">12 посещение</div>
+                            <div class="main__abonements_cards_card_down_bottom">14.000тг</div>
+                        </div>
+                    </div>
+                    <div class="main__abonements_cards_card">
+                        <div class="main__abonements_cards_card_high">
+                            <div class="main__abonements_cards_card_high_top">одноразовый</div>
+                            <div class="main__abonements_cards_card_high_bottom">абонемент</div>
+                        </div>
+                        <div class="main__abonements_cards_card_down">
+                            <div class="main__abonements_cards_card_down_top">1 посещение</div>
+                            <div class="main__abonements_cards_card_down_bottom">3.000тг</div>
+                        </div>
+                    </div>
+                    <div class="main__abonements_cards_card">
+                        <div class="main__abonements_cards_card_high">
+                            <div class="main__abonements_cards_card_high_top">пробная</div>
+                            <div class="main__abonements_cards_card_high_bottom">тренировка</div>
+                        </div>
+                        <div class="main__abonements_cards_card_down">
+                            <div class="main__abonements_cards_card_down_top">1 посещение</div>
+                            <div class="main__abonements_cards_card_down_bottom">1.000тг</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main__level" id="group-level">
+                <div class="main__level_title">
+                    GROUP-LEVEL
+                </div>
+                <div class="main__level_groups">
+                    <div class="main__level_groups_group">
+                        <div class="main__level_groups_group_level">beginner</div>
+                        <div class="main__level_groups_group_time">вторник 18.00-19.30</div>
+                        <div class="main__level_groups_group_time">четверг 18.00-19.30</div>
+                        <div class="main__level_groups_group_time">суббота 19.30-21.00</div>
+                    </div>
+                    <div class="main__level_groups_group">
+                        <div class="main__level_groups_group_level1">pro</div>
+                        <div class="main__level_groups_group_time">вторник 20.00-21.30</div>
+                        <div class="main__level_groups_group_time">четверг 20.00-21.30</div>
+                        <div class="main__level_groups_group_time">суббота 19.30-21.00</div>
+                    </div>
+                </div>
+                <div class="main__level_warning">
+                    <div class="main__level_warning_title">Важно</div>
+                    <div class="main__level_warning_info">
+                        ВЫ МОМЕНТАЛЬНО ПОПАДАЕТЕ В ГРУППУ ВЕGINNER
+                        ТАМ ВЫ ИЗУЧАЕТЕ БАЗУ, И КОГДА НАСТУПАЕТ КОНЕЦ  МЕСЯЦА, ПРОХОДИТ “УЧЕНИК МЕСЯЦА', ТО ЕСТЬ БАТТЛ."
+                        ПОБЕДИТЕЛЬ СРЕДИ BEGINNER ПОПАДАЕТ В ГРУППУ PRO
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="contacts">
+        <div class="footer">
+            <div class="footer_title">
+                Контакты
+            </div>
+            <div class="footer_main">
+                <div class="footer_main_num">+7-747-735-97-04</div>
+                <div class="footer_main_inst"><a href="https://www.instagram.com/hiphop.katsu/">inst:hiphopkatsu</a></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
