@@ -1,0 +1,123 @@
+@use '../helpers' as *;
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    height: rem(96);
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); 
+    &__left{
+        margin-left: rem(36);
+        gap: rem(15);
+        @include mobile{
+            margin-left: rem(16);
+        }
+        &_katana{
+            @include mobile{
+                width: rem(128);
+                margin-bottom: rem(8);
+            }
+        }
+        &_logo{
+            @include mobile{
+                width: rem(64);
+            }
+            
+        }
+        &_logo:hover{
+                width: rem(81);
+            }
+    }
+    &__right{
+        margin-right: rem(36);
+        @include mobile{
+            margin-right: rem(16);
+        }
+        ul{
+            display: flex;
+            list-style: none;
+            gap: rem(25);
+            @include tablet{
+                position: fixed;
+                padding: rem(48) rem(32);
+                top: 0;
+                left: -100%;
+                height: 100%;
+                width: 70%;
+                display: flex;
+                flex-direction: column;
+                row-gap: rem(128);
+                transition: left .2s;
+                background-color: #333;
+               
+            }&._active{
+                left: 0;
+            }
+            a{
+                color: black;
+                font-family: Montserrat;
+                font-weight: bold;
+                text-decoration: none;
+                transition: all .1s;
+                @include tablet{
+                    color:white;
+                    font-size: rem(42);
+                    margin-left: rem(58);
+                }
+                @include mobile {
+                    font-size: rem(28);
+                    margin-left: rem(32);
+                }
+            }a:hover{
+                    color: rgb(255, 0, 0);
+                    @include tablet{
+                        color: rgb(255, 0, 0);
+                    }
+                }
+        }
+    }
+}
+.burger {
+            display: none;
+            @media (max-width:992px){
+                display: block;
+                height: 24px;
+                width: 30px;
+                position: relative;
+                cursor: pointer;
+                z-index: 5;
+                span {
+                    transition: all .3s ease 0s;
+                    top: calc(50% - 1px);
+                    left: 0;
+                    position: absolute;
+                    width: 100%;
+                    height: 3px;
+                    background-color:#000000;
+                    &:first-child{
+                        top: 0;
+                    }
+                    &:last-child{
+                        top: auto;
+                        bottom: 0;
+                    }
+                }
+                &._active {
+                    span{
+                        transform: scale(0);
+                        &:first-child {
+                            transform: rotate(-45deg);
+                            top: calc(30%);
+                            background-color: red;
+                        }
+                        &:last-child {
+                            transform: rotate(45deg);
+                            bottom: calc(60%);
+                            background-color: red;
+                        }
+                    }
+                }
+            }
+        }

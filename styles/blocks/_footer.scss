@@ -1,0 +1,62 @@
+@use '../helpers' as *;
+.footer{
+    display: flex;
+    flex-direction: column;
+    row-gap: rem(68);
+    &_title{
+        color: white;
+            font-family: 'Montserrat';
+            font-size: rem(48);
+            font-weight: bolder;
+            padding-left: rem(50);
+            padding-top: rem(150);
+            @include tablet{
+                font-size: rem(36);
+                padding-left: rem(40);
+            }
+            @include mobile{
+                font-size: rem(26);
+                padding-left: rem(30);
+            }
+    }
+    &_main{
+        display: flex;
+        flex-direction: column;
+        padding-left: rem(50);
+        row-gap: rem(28);
+        @include tablet{
+                
+                padding-left: rem(40);
+            }
+            @include mobile{
+                
+                padding-left: rem(30);
+            }
+        &_num{
+            color: white;
+            font-family: 'Kumbh Sans';
+            font-size: rem(36);
+            @include tablet {
+                font-size: rem(32);
+            }
+            @include mobile{
+                font-size: rem(26)
+            }
+        }
+        &_inst{
+            color: white;
+            font-family: 'Raleway';
+            font-size: rem(40);
+            a{
+                color: white;
+                text-decoration: none;
+            }
+            @include tablet{
+                font-size: rem(36)
+            }
+            @include mobile{
+                font-size: rem(28)
+            }
+        }
+    }
+}

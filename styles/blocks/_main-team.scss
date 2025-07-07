@@ -1,0 +1,75 @@
+@use '../helpers' as *;
+
+.main{
+
+    &__team{
+        display: flex;
+        
+        justify-content: space-between;
+        &_left{ 
+            img{
+            @include tablet{
+                width: rem(270);
+                height: auto;
+            }
+            @include mobile{
+                width: rem(150);
+                height: auto;
+                padding-top: rem(30);
+            }
+        }
+        }
+
+        &_right{
+            display: flex;
+            flex-direction: column;
+            padding-top: rem(40);
+            row-gap: rem(16);
+            @include tablet{
+                row-gap: rem(14);
+            }
+            @include mobile{
+                row-gap: rem(4);
+            }
+            &_main{
+                color: white;
+                font-family: 'Raleway';
+                font-weight: bolder;
+                font-size: rem(66);
+                padding-right: rem(70);
+                span{
+                    color: #B90000;
+                    font-size: rem(72);
+                }
+                @include tablet{
+                    font-size: rem(38);
+                    padding-right: rem(35);
+                    span{
+                        font-size: rem(44);
+                    }
+                }
+                @include mobile{
+                    font-size: rem(20);
+                    padding-right: rem(20);
+                    span{
+                        font-size: rem(20);
+                    }
+                }
+            }
+            &_info{
+                color: #ADADAD;
+                font-family: 'Raleway';
+                font-size: rem(26);
+                flex-wrap: wrap;
+
+                @include tablet{
+                    font-size: rem(18);
+                }
+                @include mobile{
+                    font-size: rem(10);
+                    padding-right: rem(8);
+                }
+            }
+        }
+    }
+}

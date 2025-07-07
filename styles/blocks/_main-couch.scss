@@ -1,0 +1,106 @@
+@use '../helpers' as *;
+
+.main{
+    &__couch{
+        margin-top: rem(100);
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(69);
+        @include tablet{
+            margin-top: rem(80);
+            row-gap: rem(52);
+        }
+        @include mobile{
+            margin-top: rem(60);
+            row-gap: rem(42);
+        }
+        &_title{
+            color: white;
+            font-family: 'Montserrat';
+            font-size: rem(48);
+            font-weight: bolder;
+            padding-left: rem(50);
+            @include tablet{
+                font-size: rem(36);
+                padding-left: rem(40);
+            }
+            @include mobile{
+                font-size: rem(26);
+                padding-left: rem(30);
+            }
+        }
+
+        &_section{
+            display: flex;
+            gap: rem(60);
+            @include tablet{
+                gap: rem(50);
+            }
+            @include mobile{
+                gap: rem(40);
+            }
+            &_left{
+                img{
+                    @include tablet{
+                        width: rem(350);
+                    }
+                    @include mobile{
+                        width: rem(160);
+                    }
+                }
+            }
+
+            &_right{
+                display: flex;
+                flex-direction: column;
+                row-gap: rem(35);
+                padding-top: rem(18);
+                @include tablet{
+                    row-gap: rem(28);
+                    padding-top: rem(14);
+                }
+                @include mobile{
+                    row-gap: rem(4);
+                    padding-top: rem(10);
+                }
+                &_name{
+                    color: white;
+                    font-family: 'Raleway';
+                    font-size: rem(48);
+                    font-weight: bold;
+                    @include tablet{
+                        font-size: rem(38);
+                    }
+                    @include mobile{
+                        font-size: rem(18);
+                    }
+                }
+                &_num{
+                   color: #ADADAD;
+                    font-family: 'Kumbh Sans';
+                    font-size: rem(24); 
+                    @include tablet{
+                        font-size: rem(20);
+                    }
+                    @include mobile{
+                        font-size: rem(12);
+                    }
+                }
+                &_info{
+                    color: white;
+                    font-family: 'Raleway';
+                    font-size: rem(26);
+                    font-weight: bold;
+                    @include tablet{
+                        font-size: rem(22);
+                    }
+                    @include mobile{
+                        font-size: rem(8);
+                        font-weight: 200;
+                    }
+                }
+                
+            }
+        }
+    }
+}
